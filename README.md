@@ -6,49 +6,19 @@
 
 # Tasks
 ## half adder
-:: half adder (unsigned numbers) ::
+:: half adder ::
 - [X] Design
 - [ ] Test
 - [ ] Debug
 
-:: half adder (signed numbers) ::
-- [ ] Design
-- [ ] Test
-- [ ] Debug
-
-:: half adder (mixed sign numbers) ::
-- [ ] Design
-- [ ] Test
-- [ ] Debug
-
 ## full adder
-:: full adder (unsigned numbers) ::
-- [ ] Design
-- [ ] Test
-- [ ] Debug
-
-:: full adder (signed numbers) ::
-- [ ] Design
-- [ ] Test
-- [ ] Debug
-
-:: full adder (mixed sign numbers) ::
+:: full adder ::
 - [ ] Design
 - [ ] Test
 - [ ] Debug
 
 ## 8-bit adder
-:: 8-bit adder (unsigned numbers) ::
-- [ ] Design
-- [ ] Test
-- [ ] Debug
-
-:: 8-bit adder (signed numbers) ::
-- [ ] Design
-- [ ] Test
-- [ ] Debug
-
-:: 8-bit adder (mixed sign numbers) ::
+:: 8-bit adder ::
 - [ ] Design
 - [ ] Test
 - [ ] Debug
