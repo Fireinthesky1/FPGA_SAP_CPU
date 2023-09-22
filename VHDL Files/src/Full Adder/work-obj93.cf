@@ -1,0 +1,11 @@
+v 3
+file . "full_adder_tb.vhd" "20230922221852.000" "20230922152147.170":
+  entity full_adder_tb at 5( 89) + 0 on 16;
+  architecture test of full_adder_tb at 12( 213) + 0 on 17;
+file . "half_adder.vhd" "20230921233242.000" "20230922133420.330":
+  entity half_adder at 5( 79) + 0 on 11;
+  architecture my_arch of half_adder at 13( 233) + 0 on 12;
+file . "full_adder.vhd" "20230922151930.000" "20230922133453.915":
+  entity full_adder at 5( 109) + 0 on 13;
+  architecture my_arch of full_adder at 13( 283) + 0 on 14;
+  architecture decomposed_arch of full_adder at 24( 560) + 0 on 15;
