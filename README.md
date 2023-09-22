@@ -2,4 +2,4 @@
  A clone of NES hardware written in Verilog
  
 # Objectives
- 1) Create a memory bus for the cpu
+ 1) Construct a ALU
