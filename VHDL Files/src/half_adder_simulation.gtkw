@@ -1,0 +1,22 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Fri Sep 22 18:05:35 2023
+[*]
+[dumpfile] "C:\Users\james\OneDrive\Documents\NES Clone Project\NES_Clone\VHDL Files\src\half_adder_tb.vcd"
+[dumpfile_mtime] "Fri Sep 22 18:03:37 2023"
+[dumpfile_size] 459
+[savefile] "C:\Users\james\OneDrive\Documents\NES Clone Project\NES_Clone\VHDL Files\src\half_adder_simulation.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-21.000000 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 197
+[signals_width] 174
+[sst_expanded] 1
+[sst_vpaned_height] 153
+@28
+test_bits_in[1:0]
+@29
+test_bits_out[1:0]
+[pattern_trace] 1
+[pattern_trace] 0
