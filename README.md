@@ -7,7 +7,7 @@
 # Tasks
 ## half adder
 :: half adder (unsigned numbers) ::
-- [ ] Design
+- [X] Design
 - [ ] Test
 - [ ] Debug
 
