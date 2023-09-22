@@ -11,9 +11,9 @@
 - [X] Debug
 
 ## full adder
-- [ ] Design
-- [ ] Test
-- [ ] Debug
+- [X] Design
+- [X] Test
+- [X] Debug
 
 ## 8-bit adder
 - [ ] Design
