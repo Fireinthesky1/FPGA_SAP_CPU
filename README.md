@@ -15,6 +15,16 @@
 - [X] Test
 - [X] Debug
 
+## 2-bit adder
+- [ ] Design
+- [ ] Test
+- [ ] Debug
+
+## 4-bit adder
+- [ ] Design
+- [ ] Test
+- [ ] Debug
+
 ## 8-bit adder
 - [ ] Design
 - [ ] Test
