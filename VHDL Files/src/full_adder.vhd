@@ -19,3 +19,15 @@ begin
     p0 <= i1 and i0;
     carry_out <= p2 or p1 or p0;
 end my_arch;
+
+-- decomposed architecture --
+architecture decomposed_arch of full_adder is
+    signal p0, p1, p2 : std_logic;
+begin
+    -- instantiate two half adders --
+    half_adder_xin_yin : entity work.half_adder(my_arch)
+        port map(i1=>i1, i0=>i0, sum=>p0, carry=>p1);
+    half_adder_cin_sout : entity work.half_adder(my_arch)
+        port map(i1=>carry_in, i0=>p0, sum=>sum, carry=>p2);
+    carry_out <= p1 or p2;
+end decomposed_arch;
