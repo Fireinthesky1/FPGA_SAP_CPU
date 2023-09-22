@@ -7,8 +7,8 @@
 # Tasks
 ## half adder
 - [X] Design
-- [ ] Test
-- [ ] Debug
+- [X] Test
+- [X] Debug
 
 ## full adder
 - [ ] Design
