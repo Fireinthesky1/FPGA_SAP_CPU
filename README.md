@@ -11,6 +11,16 @@
 - [X] Debug
 
 ## full adder
+- [X] Design
+- [X] Test
+- [X] Debug
+
+## 2-bit adder
+- [ ] Design
+- [ ] Test
+- [ ] Debug
+
+## 4-bit adder
 - [ ] Design
 - [ ] Test
 - [ ] Debug
