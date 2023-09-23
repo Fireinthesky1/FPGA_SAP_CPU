@@ -15,10 +15,10 @@
 - [X] Test
 - [X] Debug
 
-## 2-bit adder
-- [ ] Design
-- [ ] Test
-- [ ] Debug
+## 2-bit adder (need to do synchronous adder)
+- [X] Design
+- [X] Test
+- [X] Debug
 
 ## 4-bit adder
 - [ ] Design
