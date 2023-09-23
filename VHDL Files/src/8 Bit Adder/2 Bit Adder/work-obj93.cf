@@ -1,14 +1,14 @@
 v 3
-file . "two_bit_adder_tb.vhd" "20230923025128.000" "20230922200149.440":
-  entity two_bit_adder_tb at 5( 93) + 0 on 34;
-  architecture tb_architecture of two_bit_adder_tb at 12( 222) + 0 on 35;
+file . "two_bit_adder_tb.vhd" "20230923230612.000" "20230923160626.246":
+  entity two_bit_adder_tb at 5( 93) + 0 on 38;
+  architecture tb_architecture of two_bit_adder_tb at 12( 222) + 0 on 39;
 file . "full_adder.vhd" "20230922151930.000" "20230922195321.987":
   entity full_adder at 5( 109) + 0 on 25;
   architecture my_arch of full_adder at 13( 283) + 0 on 26;
   architecture decomposed_arch of full_adder at 24( 560) + 0 on 27;
-file . "two_bit_adder.vhd" "20230923030102.000" "20230922200126.587":
-  entity two_bit_adder at 5( 93) + 0 on 32;
-  architecture ripple_carry of two_bit_adder at 15( 319) + 0 on 33;
+file . "two_bit_adder.vhd" "20230923230514.000" "20230923160524.924":
+  entity two_bit_adder at 7( 150) + 0 on 36;
+  architecture ripple_carry of two_bit_adder at 19( 454) + 0 on 37;
 file . "half_adder.vhd" "20230921233242.000" "20230922195301.706":
   entity half_adder at 5( 79) + 0 on 23;
   architecture my_arch of half_adder at 13( 233) + 0 on 24;

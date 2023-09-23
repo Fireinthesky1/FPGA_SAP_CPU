@@ -298,9 +298,11 @@
 <ID>0</ID>
 <points>74,-16.5,74,-3.5</points>
 <connection>
+<GID>16</GID>
+<name>IN_1</name></connection>
+<connection>
 <GID>8</GID>
 <name>OUT_0</name></connection>
-<intersection>-16.5 8</intersection>
 <intersection>-12.5 4</intersection></vsegment>
 <hsegment>
 <ID>4</ID>
@@ -321,14 +323,7 @@
 <connection>
 <GID>5</GID>
 <name>IN_1</name></connection>
-<intersection>-12.5 4</intersection></vsegment>
-<hsegment>
-<ID>8</ID>
-<points>74,-16.5,74,-16.5</points>
-<connection>
-<GID>16</GID>
-<name>IN_1</name></connection>
-<intersection>74 0</intersection></hsegment></shape></wire>
+<intersection>-12.5 4</intersection></vsegment></shape></wire>
 <wire>
 <ID>4</ID>
 <shape>
@@ -696,20 +691,20 @@
 <intersection>9.5 1</intersection>
 <intersection>66.5 0</intersection></hsegment></shape></wire></page 0>
 <page 1>
-<PageViewport>0,0,177.8,-92.7</PageViewport></page 1>
+<PageViewport>0,2.32143e-006,177.8,-92.7</PageViewport></page 1>
 <page 2>
-<PageViewport>0,0,177.8,-92.7</PageViewport></page 2>
+<PageViewport>0,2.32143e-006,177.8,-92.7</PageViewport></page 2>
 <page 3>
-<PageViewport>0,0,177.8,-92.7</PageViewport></page 3>
+<PageViewport>0,2.32143e-006,177.8,-92.7</PageViewport></page 3>
 <page 4>
-<PageViewport>0,0,177.8,-92.7</PageViewport></page 4>
+<PageViewport>0,2.32143e-006,177.8,-92.7</PageViewport></page 4>
 <page 5>
-<PageViewport>0,0,177.8,-92.7</PageViewport></page 5>
+<PageViewport>0,2.32143e-006,177.8,-92.7</PageViewport></page 5>
 <page 6>
-<PageViewport>0,0,177.8,-92.7</PageViewport></page 6>
+<PageViewport>0,2.32143e-006,177.8,-92.7</PageViewport></page 6>
 <page 7>
-<PageViewport>0,0,177.8,-92.7</PageViewport></page 7>
+<PageViewport>0,2.32143e-006,177.8,-92.7</PageViewport></page 7>
 <page 8>
-<PageViewport>0,0,177.8,-92.7</PageViewport></page 8>
+<PageViewport>0,2.32143e-006,177.8,-92.7</PageViewport></page 8>
 <page 9>
-<PageViewport>0,0,177.8,-92.7</PageViewport></page 9></circuit>
+<PageViewport>0,2.32143e-006,177.8,-92.7</PageViewport></page 9></circuit>
