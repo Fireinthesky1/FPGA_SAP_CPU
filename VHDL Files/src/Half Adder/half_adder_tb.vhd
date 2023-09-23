@@ -17,15 +17,15 @@ architecture tb_architecture of half_adder_tb is
              );
     end component;
 
-    signal test_bits_in : std_logic_vector(1 downto 0);
+    signal test_bits_in : std_logic_vector (1 downto 0);
     signal test_bits_out : std_logic_vector (1 downto 0);
 begin
     DUT : half_adder port map (
-                                        i1 => test_bits_in(1),
-                                        i0 => test_bits_in(0),
-                                        carry => test_bits_out(1),
-                                        sum => test_bits_out(0)
-                                     );
+                                i1 => test_bits_in(1),
+                                i0 => test_bits_in(0),
+                                carry => test_bits_out(1),
+                                sum => test_bits_out(0)
+                              );
     process begin
         -- test vector 1 --
         test_bits_in <= "00";
