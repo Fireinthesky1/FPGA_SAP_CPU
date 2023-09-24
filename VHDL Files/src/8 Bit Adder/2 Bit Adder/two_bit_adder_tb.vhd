@@ -5,7 +5,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
--- a testbench has no ports
 entity two_bit_adder_tb is
 end two_bit_adder_tb;
 
@@ -16,7 +15,8 @@ architecture tb_architecture of two_bit_adder_tb is
     signal test_bits_out : std_logic_vector (2 downto 0);
 
 begin
-    DUT : entity work.two_bit_adder(ripple_carry)
+-- Two architectures::ripple_carry or carry_lookahead
+    DUT : entity work.two_bit_adder(carry_lookahead)
         port map (
                     carry_in => test_bits_in (4),
                     a (1) => test_bits_in (3),

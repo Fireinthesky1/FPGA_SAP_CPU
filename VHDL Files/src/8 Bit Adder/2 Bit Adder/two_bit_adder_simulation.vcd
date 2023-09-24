@@ -1,5 +1,5 @@
 $date
-  Sat Sep 23 16:07:05 2023
+  Sat Sep 23 21:16:44 2023
 $end
 $version
   GHDL v0
@@ -15,51 +15,9 @@ $var reg 2 $ a[1:0] $end
 $var reg 2 % b[1:0] $end
 $var reg 1 & carry_out $end
 $var reg 2 ' sum[1:0] $end
-$var reg 1 ( carry_through $end
-$scope module lsb $end
-$var reg 1 ) carry_in $end
-$var reg 1 * i1 $end
-$var reg 1 + i0 $end
-$var reg 1 , carry_out $end
-$var reg 1 - sum $end
-$var reg 1 . p0 $end
-$var reg 1 / p1 $end
-$var reg 1 0 p2 $end
-$scope module half_adder_xin_yin $end
-$var reg 1 1 i1 $end
-$var reg 1 2 i0 $end
-$var reg 1 3 sum $end
-$var reg 1 4 carry $end
-$upscope $end
-$scope module half_adder_cin_sout $end
-$var reg 1 5 i1 $end
-$var reg 1 6 i0 $end
-$var reg 1 7 sum $end
-$var reg 1 8 carry $end
-$upscope $end
-$upscope $end
-$scope module msb $end
-$var reg 1 9 carry_in $end
-$var reg 1 : i1 $end
-$var reg 1 ; i0 $end
-$var reg 1 < carry_out $end
-$var reg 1 = sum $end
-$var reg 1 > p0 $end
-$var reg 1 ? p1 $end
-$var reg 1 @ p2 $end
-$scope module half_adder_xin_yin $end
-$var reg 1 A i1 $end
-$var reg 1 B i0 $end
-$var reg 1 C sum $end
-$var reg 1 D carry $end
-$upscope $end
-$scope module half_adder_cin_sout $end
-$var reg 1 E i1 $end
-$var reg 1 F i0 $end
-$var reg 1 G sum $end
-$var reg 1 H carry $end
-$upscope $end
-$upscope $end
+$var reg 2 ( g[1:0] $end
+$var reg 2 ) p[1:0] $end
+$var reg 4 * c[3:0] $end
 $upscope $end
 $enddefinitions $end
 #0
@@ -70,172 +28,57 @@ b00 $
 b00 %
 0&
 b00 '
-0(
-0)
-0*
-0+
-0,
-0-
-0.
-0/
-00
-01
-02
-03
-04
-05
-06
-07
-08
-09
-0:
-0;
-0<
-0=
-0>
-0?
-0@
-0A
-0B
-0C
-0D
-0E
-0F
-0G
-0H
+b00 (
+b00 )
+b0000 *
 #1000000
 b00001 !
 b001 "
 b01 %
 b01 '
-1+
-1-
-1.
-12
-13
-16
-17
+b01 )
 #2000000
 b00010 !
 b010 "
 b10 %
 b10 '
-0+
-0-
-0.
-02
-03
-06
-07
-1;
-1=
-1>
-1B
-1C
-1F
-1G
+b10 )
 #3000000
 b00011 !
 b011 "
 b11 %
 b11 '
-1+
-1-
-1.
-12
-13
-16
-17
+b11 )
 #4000000
 b00100 !
 b001 "
 b01 $
 b00 %
 b01 '
-1*
-0+
-11
-02
-0;
-0=
-0>
-0B
-0C
-0F
-0G
+b01 )
 #5000000
 b00101 !
 b010 "
 b01 %
 b10 '
-1(
-1+
-1,
-0-
-0.
-1/
-12
-03
-14
-06
-07
-19
-1=
-1E
-1G
+b01 (
+b0010 *
 #6000000
 b00110 !
 b011 "
 b10 %
-0&
 b11 '
-0(
-0+
-0,
-1-
-1.
-0/
-02
-13
-04
-16
-17
-09
-1;
-0<
-1=
-1>
-0@
-1B
-1C
-0E
-1F
-1G
-0H
+b00 (
+b11 )
+b0000 *
 #7000000
 b00111 !
 b100 "
 b11 %
 1&
 b00 '
-1(
-1+
-1,
-0-
-0.
-1/
-12
-03
-14
-06
-07
-19
-1<
-0=
-1@
-1E
-0G
-1H
+b01 (
+b1010 *
 #8000000
 b01000 !
 b010 "
@@ -243,72 +86,29 @@ b10 $
 b00 %
 0&
 b10 '
-0(
-0*
-0+
-0,
-0/
-01
-02
-04
-09
-1:
-0;
-0<
-1=
-0@
-1A
-0B
-0E
-1G
-0H
+b00 (
+b10 )
+b0000 *
 #9000000
 b01001 !
 b011 "
 b01 %
 b11 '
-1+
-1-
-1.
-12
-13
-16
-17
+b11 )
 #10000000
 b01010 !
 b100 "
 b10 %
 1&
 b00 '
-0+
-0-
-0.
-02
-03
-06
-07
-1;
-1<
-0=
-0>
-1?
-1B
-0C
-1D
-0F
-0G
+b10 (
+b10 )
 #11000000
 b01011 !
 b101 "
 b11 %
 b01 '
-1+
-1-
-1.
-12
-13
-16
-17
+b11 )
 #12000000
 b01100 !
 b011 "
@@ -316,91 +116,27 @@ b11 $
 b00 %
 0&
 b11 '
-1*
-0+
-11
-02
-0;
-0<
-1=
-1>
-0?
-0B
-1C
-0D
-1F
-1G
+b00 (
 #13000000
 b01101 !
 b100 "
 b01 %
 1&
 b00 '
-1(
-1+
-1,
-0-
-0.
-1/
-12
-03
-14
-06
-07
-19
-1<
-0=
-1@
-1E
-0G
-1H
+b01 (
+b1010 *
 #14000000
 b01110 !
 b101 "
 b10 %
 b01 '
-0(
-0+
-0,
-1-
-1.
-0/
-02
-13
-04
-16
-17
-09
-1;
-0=
-0>
-1?
-0@
-1B
-0C
-1D
-0E
-0F
-0G
-0H
+b10 (
+b0000 *
 #15000000
 b01111 !
 b110 "
 b11 %
 b10 '
-1(
-1+
-1,
-0-
-0.
-1/
-12
-03
-14
-06
-07
-19
-1=
-1E
-1G
+b11 (
+b1010 *
 #16000000

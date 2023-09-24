@@ -39,3 +39,28 @@ begin
                  );
 
 end ripple_carry;
+
+architecture carry_lookahead of two_bit_adder is
+
+    signal g, p : std_logic_vector (1 downto 0);
+    signal c : std_logic_vector (3 downto 0);
+
+begin
+
+ -- propogate and generate signals
+    p(0) <= b(0) or a(0);
+    g(0) <= b(0) and a(0);
+    p(1) <= b(1) or a(1);
+    g(1) <= b(1) and a(1);
+
+    c(0) <= carry_in and p(0);
+    c(1) <= g(0) or c(0);
+    c(2) <= carry_in and p(1) and p(0);
+    c(3) <= p(1) and g(0);
+
+    sum(0) <= carry_in xor b(0) xor a(0);
+    sum(1) <= a(1) xor b(1) xor c(1);
+
+    carry_out <= c(3) or c(2) or g(1);
+
+end carry_lookahead;
