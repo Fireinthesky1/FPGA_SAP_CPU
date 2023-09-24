@@ -16,20 +16,33 @@
 - [X] Test
 - [X] Debug
 
-## 2-bit adder (need to do synchronous adder)
+## 2-bit adder
 - [X] Design
 - [X] Test
 - [X] Debug
+- [ ] Carry Lookahead
+- [X] design
+- [ ] test
+- [ ] debug
 
 ## 4-bit adder
-- [ ] Design
+- [X] Design
 - [ ] Test
 - [ ] Debug
+- [ ] Carry Lookahead
+- [ ] design
+- [ ] test
+- [ ] debug
+
 
 ## 8-bit adder
-- [ ] Design
+- [X] Design
 - [ ] Test
 - [ ] Debug
+- [ ] Carry Lookahead
+- [ ] design
+- [ ] test
+- [ ] debug
 
 ## 8-bit incrementer
 - [ ] Design
