@@ -44,3 +44,28 @@
 - [X] Design
 - [X] Test
 - [X] Debug
+
+## 8-bit Bitwise And
+- [ ] Design
+- [ ] Test
+- [ ] Debug
+
+## 8-bit Bitwise Or
+- [ ] Design
+- [ ] Test
+- [ ] Debug
+
+## 8-bit Bitwise Not
+- [ ] Design
+- [ ] Test
+- [ ] Debug
+
+## 8-bit Zero
+- [ ] Design
+- [ ] Test
+- [ ] Debug
+
+## ALU
+- [ ] Design
+- [ ] Test
+- [ ] Debug
