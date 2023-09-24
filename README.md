@@ -21,10 +21,10 @@
 - [X] Design
 - [X] Test
 - [X] Debug
-- [ ] Carry Lookahead
+- [X] Carry Lookahead
 - [X] design
-- [ ] test
-- [ ] debug
+- [X] test
+- [X] debug
 
 ## 4-bit adder
 - [X] Design
