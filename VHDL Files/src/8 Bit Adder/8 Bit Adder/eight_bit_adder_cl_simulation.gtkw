@@ -1,0 +1,22 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Sun Sep 24 22:19:35 2023
+[*]
+[dumpfile] "C:\Users\james\OneDrive\Documents\NES Clone Project\NES_Clone\VHDL Files\src\8 Bit Adder\8 Bit Adder\eight_bit_adder_cl_simulation.vcd"
+[dumpfile_mtime] "Sun Sep 24 22:17:08 2023"
+[dumpfile_size] 58594
+[savefile] "C:\Users\james\OneDrive\Documents\NES Clone Project\NES_Clone\VHDL Files\src\8 Bit Adder\8 Bit Adder\eight_bit_adder_cl_simulation.gtkw"
+[timestart] 509267000
+[size] 1843 1057
+[pos] -243 -243
+*-19.000000 790000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 197
+[signals_width] 174
+[sst_expanded] 1
+[sst_vpaned_height] 314
+@29
+test_bits_in[16:0]
+@24
+test_bits_out[8:0]
+[pattern_trace] 1
+[pattern_trace] 0

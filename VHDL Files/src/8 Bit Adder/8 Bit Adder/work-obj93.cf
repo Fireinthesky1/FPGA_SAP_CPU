@@ -1,20 +1,22 @@
 v 3
-file . "four_bit_adder.vhd" "20230924010302.000" "20230923181200.059":
-  entity four_bit_adder at 5( 83) + 0 on 18;
-  architecture ripple_carry of four_bit_adder at 17( 389) + 0 on 19;
-file . "full_adder.vhd" "20230922151930.000" "20230923181126.568":
-  entity full_adder at 5( 109) + 0 on 13;
-  architecture my_arch of full_adder at 13( 283) + 0 on 14;
-  architecture decomposed_arch of full_adder at 24( 560) + 0 on 15;
-file . "half_adder.vhd" "20230921233242.000" "20230923181103.500":
-  entity half_adder at 5( 79) + 0 on 11;
-  architecture my_arch of half_adder at 13( 233) + 0 on 12;
-file . "two_bit_adder.vhd" "20230923230514.000" "20230923181146.032":
-  entity two_bit_adder at 7( 150) + 0 on 16;
-  architecture ripple_carry of two_bit_adder at 19( 454) + 0 on 17;
-file . "eight_bit_adder.vhd" "20230924011722.000" "20230923190159.782":
-  entity eight_bit_adder at 7( 104) + 0 on 22;
-  architecture ripple_carry of eight_bit_adder at 19( 412) + 0 on 23;
-file . "eight_bit_adder_tb.vhd" "20230924020612.000" "20230923190620.518":
-  entity eight_bit_adder_tb at 5( 95) + 0 on 26;
-  architecture tb_architecture of eight_bit_adder_tb at 12( 226) + 0 on 27;
+file . "four_bit_adder.vhd" "20230924010302.000" "20230924151521.500":
+  entity four_bit_adder at 5( 83) + 0 on 59;
+  architecture ripple_carry of four_bit_adder at 17( 389) + 0 on 60;
+file . "full_adder.vhd" "20230922151930.000" "20230924151511.026":
+  entity full_adder at 5( 109) + 0 on 53;
+  architecture my_arch of full_adder at 13( 283) + 0 on 54;
+  architecture decomposed_arch of full_adder at 24( 560) + 0 on 55;
+file . "half_adder.vhd" "20230921233242.000" "20230924151505.455":
+  entity half_adder at 5( 79) + 0 on 51;
+  architecture my_arch of half_adder at 13( 233) + 0 on 52;
+file . "two_bit_adder.vhd" "20230924221120.000" "20230924151517.351":
+  entity two_bit_adder at 7( 150) + 0 on 56;
+  architecture ripple_carry of two_bit_adder at 19( 454) + 0 on 57;
+  architecture carry_lookahead of two_bit_adder at 43( 1144) + 0 on 58;
+file . "eight_bit_adder.vhd" "20230924220952.000" "20230924151526.146":
+  entity eight_bit_adder at 7( 119) + 0 on 61;
+  architecture ripple_carry of eight_bit_adder at 19( 427) + 0 on 62;
+  architecture carry_lookahead_ripple_carry of eight_bit_adder at 43( 1197) + 0 on 63;
+file . "eight_bit_adder_tb.vhd" "20230924221634.000" "20230924151639.052":
+  entity eight_bit_adder_tb at 5( 95) + 0 on 66;
+  architecture tb_architecture of eight_bit_adder_tb at 12( 226) + 0 on 67;

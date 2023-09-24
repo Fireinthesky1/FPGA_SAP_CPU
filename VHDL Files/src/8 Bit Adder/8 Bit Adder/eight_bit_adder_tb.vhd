@@ -16,7 +16,7 @@ architecture tb_architecture of eight_bit_adder_tb is
     signal test_bits_out : std_logic_vector (8 downto 0);
 
 begin
-    DUT : entity work.eight_bit_adder(ripple_carry)
+    DUT : entity work.eight_bit_adder(carry_lookahead_ripple_carry)
         port map (
                     carry_in => test_bits_in (16),
 
