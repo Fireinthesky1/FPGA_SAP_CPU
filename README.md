@@ -2,8 +2,9 @@
  An 8 bit cpu that is as simple as possible written in VHDL for use with FPGA.
  
 # Objectives
- 1) Go back and make sure all code so far is uniform with uniform style.
- 2) Construct the ALU
+ 1) Verify tests for four bit and eight bit adders
+ 2) Go back and make sure all code so far is uniform with uniform style.
+ 3) Construct the ALU
 
 # Tasks
 ## half adder
@@ -27,7 +28,7 @@
 
 ## 4-bit adder
 - [X] Design
-- [ ] Test
+- [X] Test
 - [ ] Debug
 - [ ] Carry Lookahead
 - [ ] design
@@ -37,7 +38,7 @@
 
 ## 8-bit adder
 - [X] Design
-- [ ] Test
+- [X] Test
 - [ ] Debug
 - [ ] Carry Lookahead
 - [ ] design
