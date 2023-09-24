@@ -1,0 +1,7 @@
+v 3
+file . "eight_bit_zero_tb.vhd" "20230924235404.000" "20230924165406.151":
+  entity eight_bit_zero_tb at 5( 83) + 0 on 13;
+  architecture tb_architecture of eight_bit_zero_tb at 12( 212) + 0 on 14;
+file . "eight_bit_zero.vhd" "20230924234822.000" "20230924164828.165":
+  entity eight_bit_zero at 5( 83) + 0 on 11;
+  architecture my_arch of eight_bit_zero at 15( 315) + 0 on 12;
