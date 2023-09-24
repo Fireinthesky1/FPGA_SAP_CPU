@@ -11,6 +11,7 @@
 
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 entity four_bit_adder_tb is
 end four_bit_adder_tb;
@@ -44,4 +45,14 @@ begin
                     sum (0) => test_bits_out (0)
                  );
     process begin
--- NEED A CLEVER WAY TO TEST THIS --
+        for I in 0 to 255 loop
+            test_bits_in <= std_logic_vector(to_unsigned(I,9));
+            wait for 1 ns;
+        end loop;
+
+        assert false report "End of Test";
+        wait;
+
+    end process;
+
+end tb_architecture;

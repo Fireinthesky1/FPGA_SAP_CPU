@@ -2,7 +2,7 @@
 -- Eight Bit Adder
 -- James Hicks Sept 23 2023
 
--- Needs testing
+-- Needs verification for tests
 
 library ieee;
 use ieee.std_logic_1164.all;

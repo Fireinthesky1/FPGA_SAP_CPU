@@ -1,17 +1,20 @@
 v 3
-file . "eight_bit_adder.vhd" "20230924011650.000" "20230923181655.674":
-  entity eight_bit_adder at 5( 84) + 0 on 20;
-  architecture ripple_carry of eight_bit_adder at 17( 392) + 0 on 21;
-file . "two_bit_adder.vhd" "20230923230514.000" "20230923181146.032":
-  entity two_bit_adder at 7( 150) + 0 on 16;
-  architecture ripple_carry of two_bit_adder at 19( 454) + 0 on 17;
-file . "half_adder.vhd" "20230921233242.000" "20230923181103.500":
-  entity half_adder at 5( 79) + 0 on 11;
-  architecture my_arch of half_adder at 13( 233) + 0 on 12;
+file . "four_bit_adder.vhd" "20230924010302.000" "20230923181200.059":
+  entity four_bit_adder at 5( 83) + 0 on 18;
+  architecture ripple_carry of four_bit_adder at 17( 389) + 0 on 19;
 file . "full_adder.vhd" "20230922151930.000" "20230923181126.568":
   entity full_adder at 5( 109) + 0 on 13;
   architecture my_arch of full_adder at 13( 283) + 0 on 14;
   architecture decomposed_arch of full_adder at 24( 560) + 0 on 15;
-file . "four_bit_adder.vhd" "20230924010302.000" "20230923181200.059":
-  entity four_bit_adder at 5( 83) + 0 on 18;
-  architecture ripple_carry of four_bit_adder at 17( 389) + 0 on 19;
+file . "half_adder.vhd" "20230921233242.000" "20230923181103.500":
+  entity half_adder at 5( 79) + 0 on 11;
+  architecture my_arch of half_adder at 13( 233) + 0 on 12;
+file . "two_bit_adder.vhd" "20230923230514.000" "20230923181146.032":
+  entity two_bit_adder at 7( 150) + 0 on 16;
+  architecture ripple_carry of two_bit_adder at 19( 454) + 0 on 17;
+file . "eight_bit_adder.vhd" "20230924011722.000" "20230923190159.782":
+  entity eight_bit_adder at 7( 104) + 0 on 22;
+  architecture ripple_carry of eight_bit_adder at 19( 412) + 0 on 23;
+file . "eight_bit_adder_tb.vhd" "20230924020612.000" "20230923190620.518":
+  entity eight_bit_adder_tb at 5( 95) + 0 on 26;
+  architecture tb_architecture of eight_bit_adder_tb at 12( 226) + 0 on 27;
