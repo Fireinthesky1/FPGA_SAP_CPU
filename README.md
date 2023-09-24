@@ -29,23 +29,18 @@
 ## 4-bit adder
 - [X] Design
 - [X] Test
-- [ ] Debug
-- [ ] Carry Lookahead
-- [ ] design
-- [ ] test
-- [ ] debug
-
+- [X] Debug
 
 ## 8-bit adder
 - [X] Design
 - [X] Test
-- [ ] Debug
-- [ ] Carry Lookahead
-- [ ] design
-- [ ] test
-- [ ] debug
+- [X] Debug
+- [X] Carry Lookahead
+- [X] design
+- [X] test
+- [X] debug
 
 ## 8-bit incrementer
-- [ ] Design
-- [ ] Test
-- [ ] Debug
+- [X] Design
+- [X] Test
+- [X] Debug
