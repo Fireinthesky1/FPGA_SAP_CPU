@@ -61,9 +61,9 @@
 - [ ] Debug
 
 ## 8-bit Zero
-- [ ] Design
-- [ ] Test
-- [ ] Debug
+- [X] Design
+- [X] Test
+- [X] Debug
 
 ## ALU
 - [ ] Design
