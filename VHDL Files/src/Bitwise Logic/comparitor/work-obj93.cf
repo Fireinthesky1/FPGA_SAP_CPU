@@ -1,0 +1,10 @@
+v 4
+file . "two_bit_comparitor_tb.vhd" "02c1feed0471aa6d9c38d586d144392c7a583bad" "20230926183814.106":
+  entity two_bit_comparitor_tb at 3( 39) + 0 on 15;
+  architecture tb_arch of two_bit_comparitor_tb at 10( 176) + 0 on 16;
+file . "one_bit_comparitor.vhd" "b7d470de3b8c9fa202abe8a847a05c773856e91e" "20230926172532.993":
+  entity one_bit_comparitor at 3( 28) + 0 on 11;
+  architecture sop_arch of one_bit_comparitor at 12( 227) + 0 on 12;
+file . "two_bit_comparitor.vhd" "8f311426ad24fc30193311bca4a0a5e4c9d92ff0" "20230926172550.367":
+  entity two_bit_comparitor at 3( 28) + 0 on 13;
+  architecture struct_arch of two_bit_comparitor at 13( 247) + 0 on 14;
