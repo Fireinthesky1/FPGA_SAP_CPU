@@ -3,10 +3,7 @@
 -- James Hicks Sept 23 2023
 
 -- The structure of test bits in is as follows
--- The left most bit of test_bits_in is the carry in to the device
--- The following four bits correspond to the a input on the 4 bit adder
--- The final four bits correspond to the b input on the 4 bit adder
-
+-- (carry in bit) & (a input) & (b input)
 -- Test bits out simply represents the sum of the two input numbers
 
 library ieee;
