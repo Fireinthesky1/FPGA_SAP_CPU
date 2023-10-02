@@ -46,9 +46,9 @@
 - [X] Debug
 
 ## 8-bit Bitwise And
-- [ ] Design
-- [ ] Test
-- [ ] Debug
+- [X] Design
+- [X] Test
+- [X] Debug
 
 ## 8-bit Bitwise Or
 - [ ] Design
