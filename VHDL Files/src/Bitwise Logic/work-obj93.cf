@@ -1,7 +1,13 @@
 v 3
-file . "eight_bit_bitwise_not_tb.vhd" "20230925035224.000" "20230924205228.877":
-  entity eight_bit_bitwise_not_tb at 5( 101) + 0 on 15;
-  architecture tb_architecture of eight_bit_bitwise_not_tb at 12( 244) + 0 on 16;
+file . "eight_bit_bitwise_and.vhd" "20230925201508.000" "20231001191301.589":
+  entity eight_bit_bitwise_and at 5( 90) + 0 on 17;
+  architecture my_arch of eight_bit_bitwise_and at 15( 335) + 0 on 18;
 file . "eight_bit_bitwise_not.vhd" "20230925034638.000" "20230924204643.383":
   entity eight_bit_bitwise_not at 5( 90) + 0 on 13;
   architecture my_arch of eight_bit_bitwise_not at 15( 336) + 0 on 14;
+file . "eight_bit_bitwise_not_tb.vhd" "20230925035224.000" "20230924205228.877":
+  entity eight_bit_bitwise_not_tb at 5( 101) + 0 on 15;
+  architecture tb_architecture of eight_bit_bitwise_not_tb at 12( 244) + 0 on 16;
+file . "eight_bit_bitwise_and_tb.vhd" "20231002021504.000" "20231001191517.967":
+  entity eight_bit_bitwise_and_tb at 5( 101) + 0 on 21;
+  architecture tb_architecture of eight_bit_bitwise_and_tb at 12( 244) + 0 on 22;
