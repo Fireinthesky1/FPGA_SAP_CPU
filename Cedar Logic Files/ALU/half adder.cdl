@@ -1,7 +1,7 @@
 <circuit>
 <CurrentPage>0</CurrentPage>
 <page 0>
-<PageViewport>-6,0,171.8,-92.7</PageViewport>
+<PageViewport>3.775,4.76744,126.825,-56.4927</PageViewport>
 <gate>
 <ID>2</ID>
 <type>AA_TOGGLE</type>
@@ -406,10 +406,12 @@
 <ID>1</ID>
 <points>79,-21,89.5,-21</points>
 <connection>
+<GID>27</GID>
+<name>IN_1</name></connection>
+<connection>
 <GID>21</GID>
 <name>OUT_0</name></connection>
-<intersection>85 3</intersection>
-<intersection>89.5 7</intersection></hsegment>
+<intersection>85 3</intersection></hsegment>
 <vsegment>
 <ID>3</ID>
 <points>85,-39,85,-21</points>
@@ -429,14 +431,7 @@
 <connection>
 <GID>38</GID>
 <name>IN_0</name></connection>
-<intersection>85 3</intersection></hsegment>
-<vsegment>
-<ID>7</ID>
-<points>89.5,-21,89.5,-21</points>
-<connection>
-<GID>27</GID>
-<name>IN_1</name></connection>
-<intersection>-21 1</intersection></vsegment></shape></wire>
+<intersection>85 3</intersection></hsegment></shape></wire>
 <wire>
 <ID>20</ID>
 <shape>
@@ -528,20 +523,20 @@
 <GID>52</GID>
 <name>OUT</name></connection></hsegment></shape></wire></page 0>
 <page 1>
-<PageViewport>0,0,177.8,-92.7</PageViewport></page 1>
+<PageViewport>0,46.5726,560.754,-232.598</PageViewport></page 1>
 <page 2>
-<PageViewport>0,0,177.8,-92.7</PageViewport></page 2>
+<PageViewport>0,46.5726,560.754,-232.598</PageViewport></page 2>
 <page 3>
-<PageViewport>0,0,177.8,-92.7</PageViewport></page 3>
+<PageViewport>0,46.5726,560.754,-232.598</PageViewport></page 3>
 <page 4>
-<PageViewport>0,0,177.8,-92.7</PageViewport></page 4>
+<PageViewport>0,46.5726,560.754,-232.598</PageViewport></page 4>
 <page 5>
-<PageViewport>0,0,177.8,-92.7</PageViewport></page 5>
+<PageViewport>0,46.5726,560.754,-232.598</PageViewport></page 5>
 <page 6>
-<PageViewport>0,0,177.8,-92.7</PageViewport></page 6>
+<PageViewport>0,46.5726,560.754,-232.598</PageViewport></page 6>
 <page 7>
-<PageViewport>0,0,177.8,-92.7</PageViewport></page 7>
+<PageViewport>0,46.5726,560.754,-232.598</PageViewport></page 7>
 <page 8>
-<PageViewport>0,0,177.8,-92.7</PageViewport></page 8>
+<PageViewport>0,46.5726,560.754,-232.598</PageViewport></page 8>
 <page 9>
-<PageViewport>0,0,177.8,-92.7</PageViewport></page 9></circuit>
+<PageViewport>0,46.5726,560.754,-232.598</PageViewport></page 9></circuit>
