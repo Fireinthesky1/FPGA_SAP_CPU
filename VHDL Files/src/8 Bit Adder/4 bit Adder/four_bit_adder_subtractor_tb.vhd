@@ -29,7 +29,7 @@ begin
                     sum_diff => test_bits_out (3 downto 0)
                  );
     process begin
-        for I in 255 to 512 loop
+        for I in 0 to 512 loop
             test_bits_in <= std_logic_vector(to_unsigned(I,9));
             wait for 1 ns;
         end loop;
