@@ -1,0 +1,4 @@
+v 3
+file . "three_bit_ALU.vhd" "20231008210830.000" "20231008140920.712":
+  entity three_bit_alu at 5( 80) + 0 on 19;
+  architecture my_arch of three_bit_alu at 20( 536) + 0 on 20;
