@@ -1,0 +1,18 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Tue Oct 03 18:39:14 2023
+[*]
+[dumpfile] "C:\Users\james\Documents\GitHub\FPGA_SAP_CPU\VHDL Files\src\8 Bit Adder\4 bit adder\four_bit_adder_subtractor_simulation.vcd"
+[dumpfile_mtime] "Tue Oct 03 18:38:35 2023"
+[dumpfile_size] 217477
+[savefile] "C:\Users\james\Documents\GitHub\FPGA_SAP_CPU\VHDL Files\src\8 Bit Adder\4 bit adder\adder sub sim.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -38 -146
+*0.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 197
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 153
+[pattern_trace] 1
+[pattern_trace] 0
