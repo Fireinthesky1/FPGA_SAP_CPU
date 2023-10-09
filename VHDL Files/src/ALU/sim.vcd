@@ -1,5 +1,5 @@
 $date
-  Mon Oct 09 10:31:52 2023
+  Mon Oct 09 16:26:53 2023
 $end
 $version
   GHDL v0
@@ -7,13 +7,6 @@ $end
 $timescale
   1 fs
 $end
-$scope module standard $end
-$upscope $end
-$scope module std_logic_1164 $end
-$upscope $end
-$scope module numeric_std $end
-$upscope $end
-$scope module three_bit_alu_tb $end
 $var reg 3 ! num1[2:0] $end
 $var reg 3 " num2[2:0] $end
 $var reg 4 # control[3:0] $end
@@ -27,7 +20,6 @@ $var reg 1 ) subtract $end
 $var reg 1 * multiply $end
 $var reg 6 + result[5:0] $end
 $var reg 4 , control[3:0] $end
-$upscope $end
 $upscope $end
 $enddefinitions $end
 #0
@@ -96,3 +88,36 @@ b111111 $
 1*
 b111111 +
 b1001 ,
+#10000000
+b1010 #
+b111110 $
+1)
+0*
+b111110 +
+b1010 ,
+#11000000
+b1011 #
+1*
+b1011 ,
+#12000000
+b1100 #
+b000000 $
+1(
+0)
+0*
+b000000 +
+b1100 ,
+#13000000
+b1101 #
+1*
+b1101 ,
+#14000000
+b1110 #
+1)
+0*
+b1110 ,
+#15000000
+b1111 #
+1*
+b1111 ,
+#16000000

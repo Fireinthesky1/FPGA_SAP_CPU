@@ -1,7 +1,7 @@
-v 4
-file . "three_bit_ALU_tb.vhd" "9309b34113d0d3e50ffbf59229f5644b995ac6df" "20231009173150.933":
-  entity three_bit_alu_tb at 5( 91) + 0 on 29;
-  architecture tb_arch of three_bit_alu_tb at 12( 218) + 0 on 30;
-file . "three_bit_ALU.vhd" "ba18bd55b0731bb94ace2167f3e0d0bd8d5f7128" "20231009173148.379":
-  entity three_bit_alu at 5( 80) + 0 on 27;
-  architecture my_arch of three_bit_alu at 20( 536) + 0 on 28;
+v 3
+file . "three_bit_ALU_tb.vhd" "20231009232328.000" "20231009162629.224":
+  entity three_bit_alu_tb at 5( 91) + 0 on 13;
+  architecture tb_arch of three_bit_alu_tb at 12( 218) + 0 on 14;
+file . "three_bit_ALU.vhd" "20231009232550.000" "20231009162614.078":
+  entity three_bit_alu at 5( 80) + 0 on 11;
+  architecture my_arch of three_bit_alu at 20( 536) + 0 on 12;

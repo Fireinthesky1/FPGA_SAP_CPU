@@ -24,19 +24,19 @@ architecture my_arch of three_bit_ALU is
 begin
     control <= s_u & add & subtract & multiply;
     with control select result <=
-        "00" & std_logic_vector(unsigned('0' & num1) + unsigned('0' & num2)) when "0100",
-        "00" & std_logic_vector(unsigned('0' & num1) + unsigned('0' & num2)) when "0101",
-        "00" & std_logic_vector(unsigned('0' & num1) + unsigned('0' & num2)) when "0110",
-        "00" & std_logic_vector(unsigned('0' & num1) + unsigned('0' & num2)) when "0111",
-        "00" & std_logic_vector(unsigned('0' & num1) - unsigned('0' & num2)) when "0010",
-        "00" & std_logic_vector(unsigned('0' & num1) - unsigned('0' & num2)) when "0011",
+        std_logic_vector(unsigned("000" & num1) + unsigned(num2)) when "0100",
+        std_logic_vector(unsigned("000" & num1) + unsigned(num2)) when "0101",
+        std_logic_vector(unsigned("000" & num1) + unsigned(num2)) when "0110",
+        std_logic_vector(unsigned("000" & num1) + unsigned(num2)) when "0111",
+        std_logic_vector(unsigned("000" & num1) - unsigned(num2)) when "0010",
+        std_logic_vector(unsigned("000" & num1) - unsigned(num2)) when "0011",
         std_logic_vector(unsigned(num1) * unsigned(num2)) when "0001",
-        std_logic_vector(signed(num1) + signed(num2)) when "1100",
-        std_logic_vector(signed(num1) + signed(num2)) when "1101",
-        std_logic_vector(signed(num1) + signed(num2)) when "1110",
-        std_logic_vector(signed(num1) + signed(num2)) when "1111",
-        std_logic_vector(signed(num1) - signed(num2)) when "1010",
-        std_logic_vector(signed(num1) - signed(num2)) when "1011",
+        std_logic_vector(signed(num1(2) & num1(2) & num1(2) & num1) + signed(num2)) when "1100",
+        std_logic_vector(signed(num1(2) & num1(2) & num1(2) & num1) + signed(num2)) when "1101",
+        std_logic_vector(signed(num1(2) & num1(2) & num1(2) & num1) + signed(num2)) when "1110",
+        std_logic_vector(signed(num1(2) & num1(2) & num1(2) & num1) + signed(num2)) when "1111",
+        std_logic_vector(signed(num1(2) & num1(2) & num1(2) & num1) - signed(num2)) when "1010",
+        std_logic_vector(signed(num1(2) & num1(2) & num1(2) & num1) - signed(num2)) when "1011",
         std_logic_vector(signed(num1) * signed(num2)) when "1001",
         "000000" when others;
 end my_arch;
