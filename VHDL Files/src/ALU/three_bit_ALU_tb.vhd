@@ -30,8 +30,8 @@ begin
 
     process begin
         for I in 0 to 15 loop
-            num1 <= "111";
-            num2 <= "001";
+            num1 <= "101"; -- <- modify this for testing
+            num2 <= "110"; -- <- modify this for testing
             control <= std_logic_vector(to_unsigned(I,4));
             wait for 1 ns;
         end loop;

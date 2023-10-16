@@ -1,0 +1,8 @@
+-- VHDL 8 bit process project
+-- 4 x 2 encoder
+-- James Hicks Oct 15 2023
+
+library ieee;
+ieee.std_logic_1164.all;
+
+entity encoder

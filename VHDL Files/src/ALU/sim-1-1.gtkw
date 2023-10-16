@@ -1,0 +1,24 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Sun Oct 15 21:07:19 2023
+[*]
+[dumpfile] "C:\Users\james\OneDrive\Documents\NES Clone Project\NES_Clone\VHDL Files\src\ALU\sim-1-1.vcd"
+[dumpfile_mtime] "Sun Oct 15 21:05:54 2023"
+[dumpfile_size] 1286
+[savefile] "C:\Users\james\OneDrive\Documents\NES Clone Project\NES_Clone\VHDL Files\src\ALU\sim-1-1.gtkw"
+[timestart] 9400000
+[size] 1000 600
+[pos] -1 -1
+*-21.000000 11040000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 197
+[signals_width] 126
+[sst_expanded] 1
+[sst_vpaned_height] 153
+@28
+control[3:0]
+@420
+num1[2:0]
+num2[2:0]
+result[5:0]
+[pattern_trace] 1
+[pattern_trace] 0
