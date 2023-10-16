@@ -65,4 +65,5 @@ begin
     std_logic_vector(four + unsigned(d_1)) when "01",
     std_logic_vector("00" & d_0) when "00",
     "0000" when others;
+
 end my_arch;
