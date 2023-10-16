@@ -68,6 +68,7 @@ architecture case_arch of encoder_4x2 is
 begin
 
   process(r)
+
   begin
     case r is
       when "1000" | "1001" | "1010" | "1011" |
@@ -88,4 +89,5 @@ begin
         v <= '0';
       end case;
   end process;
+
 end case_arch;
