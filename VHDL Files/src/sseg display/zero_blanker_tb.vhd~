@@ -1,0 +1,10 @@
+-- VHDL 8 bit processor project
+-- zero blanker test bench
+-- James Hicks Oct 18 2023
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity zero_blanker_tb is
+end zero_blanker_tb;
