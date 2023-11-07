@@ -1,0 +1,7 @@
+v 4
+file . "t_ff_tb.vhd" "d101e1d77e5e141eaa370c7b4a27e59ec37cd348" "20231107212041.353":
+  entity t_ff_tb at 5( 94) + 0 on 17;
+  architecture tb of t_ff_tb at 12( 203) + 0 on 18;
+file . "t_ff.vhd" "328cb688ca9c7f5ca165e64129bdcbb945eb7f73" "20231107212020.348":
+  entity t_ff_en at 1( 0) + 0 on 15;
+  architecture two_seg_arch of t_ff_en at 13( 273) + 0 on 16;
