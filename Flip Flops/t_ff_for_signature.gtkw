@@ -1,0 +1,26 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Tue Nov 07 21:24:56 2023
+[*]
+[dumpfile] "C:\Users\james\Desktop\Flip Flops\sim_t.vcd"
+[dumpfile_mtime] "Tue Nov 07 21:21:08 2023"
+[dumpfile_size] 2023
+[savefile] "C:\Users\james\Desktop\Flip Flops\t_ff_for_signature.gtkw"
+[timestart] 0
+[size] 901 784
+[pos] -138 -131
+*-27.000000 171700000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] t_ff_tb.
+[sst_width] 197
+[signals_width] 98
+[sst_expanded] 1
+[sst_vpaned_height] 218
+@28
+t_ff_tb.t
+t_ff_tb.en
+t_ff_tb.clk
+t_ff_tb.rst
+@29
+t_ff_tb.q
+[pattern_trace] 1
+[pattern_trace] 0

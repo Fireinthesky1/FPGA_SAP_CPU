@@ -8,8 +8,7 @@
 -- display the difference in the rightmost ssegs
 -- Blank leading zeros
 -- Add an extra input button,
-  -- when this button is pushed instead of subtracting
-  -- we add
+  -- when this button is pushed instead of subtracting we add
 
 library ieee;
 use ieee.std_logic_1164.all;
