@@ -1,0 +1,19 @@
+-- VHDL 8 bit processor project
+-- 16 x 4 encoder
+-- James Hicks Oct 15 2023
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity encoder_16x4 is
+  port(r : in std_logic_vector (15 downto 0);
+       e : out std_logic_vector (3 downto 0);
+       v out std_logic);
+end encoder_16x4;
+
+architecture my_arch of encoder_16x4 is
+  signal v_int : std_logic_vector (3 downto 0);
+  signal d_3, d_2, d_1, d_0 : std_logic_vector(1 downto 0);
+  
+begin
+  

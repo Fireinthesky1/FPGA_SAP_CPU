@@ -1,0 +1,8 @@
+v 3
+file . "d_ff.vhd" "20231102040708.000" "20231101213121.434":
+  entity d_ff_en at 1( 0) + 0 on 11;
+  architecture two_seg_arch of d_ff_en at 13( 273) + 0 on 12;
+  architecture behavioral of d_ff_en at 37( 739) + 0 on 13;
+file . "d_ff_tb.vhd" "20231102044710.000" "20231101214713.551":
+  entity d_ff_tb at 5( 94) + 0 on 32;
+  architecture tb of d_ff_tb at 12( 203) + 0 on 33;
