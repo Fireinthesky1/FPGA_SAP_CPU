@@ -26,7 +26,7 @@ architecture scheme1_arch of debouncer is
     -- need to define present state and next state signals
     signal state_reg : state_type;
     signal state_nxt : state_type;
-    
+
 begin
 
     --////////////////////////

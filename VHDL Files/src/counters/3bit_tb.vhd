@@ -2,6 +2,8 @@
 -- 3 bit counter test bench
 -- James Hicks November 11 2023
 
+--TODO::Why isn't the debouncer working?
+
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -33,8 +35,11 @@ begin
 
   btn_process : process
   begin
-    wait for 10000 ns;
-    btn <= not btn;
+    btn <= '1';
+    wait for 5 us;  -- Simulate button press for 100 ns
+    btn <= '0';
+    wait for 100 us;  -- Simulate button release for 100 ns
+    wait for 1 ms;    -- Wait for 1 us before repeating
   end process;
 
   rst_process : process
@@ -47,7 +52,7 @@ begin
 
   termination_process : process
   begin
-    wait for 200000 ns;
+    wait for 500 ms;
     assert false report "end of test" severity failure;
   end process;
 
