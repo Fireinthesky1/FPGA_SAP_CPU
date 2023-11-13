@@ -2,7 +2,7 @@
 -- 3 bit counter test bench
 -- James Hicks November 11 2023
 
---TODO::Why isn't the debouncer working?
+--NOTE::input must be stable for 3 max ticks to increment
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -18,7 +18,7 @@ architecture tb_arch of tb is
 
 begin
 
-  threebitcounter : entity work.threebitcounter(my_arch)
+  threebitcounter : entity work.threebitcounter(two_seg)
     port map( clk => clk,
               btn => btn,
               rst => rst,
@@ -36,10 +36,9 @@ begin
   btn_process : process
   begin
     btn <= '1';
-    wait for 5 us;  -- Simulate button press for 100 ns
+    wait for 1550 ns;  -- Simulate button press for 100 ns
     btn <= '0';
-    wait for 100 us;  -- Simulate button release for 100 ns
-    wait for 1 ms;    -- Wait for 1 us before repeating
+    wait for 1550 ns;  -- Simulate button release for 100 ns
   end process;
 
   rst_process : process
@@ -52,7 +51,7 @@ begin
 
   termination_process : process
   begin
-    wait for 500 ms;
+    wait for 500000 ns;
     assert false report "end of test" severity failure;
   end process;
 

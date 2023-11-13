@@ -26,8 +26,6 @@ begin
                db    => btn_db
              );
 
---TODO::do we use btn_db as a sensitivity here?
-
   two_seg : process (btn_db, rst)
   begin
     if (rst = '1') then
