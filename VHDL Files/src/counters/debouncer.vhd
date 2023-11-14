@@ -5,7 +5,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity debouncer is
-    Generic (MAX_CNT : integer := 50; --TODO::1000000
+    Generic (MAX_CNT : integer := 1000000; --TODO::1000000
              N       : integer := 20);     -- ceil(log2 1000000) = 20             
     Port ( reset : in STD_LOGIC;
            clk   : in STD_LOGIC;
