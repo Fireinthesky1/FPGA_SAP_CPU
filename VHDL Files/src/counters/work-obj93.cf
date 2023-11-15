@@ -1,0 +1,23 @@
+v 4
+file . "3bit_alt.vhd" "56f2e684ced45783d055ca9b8a291088a9b51063" "20231112031115.501":
+  entity threebitcounter_alt at 4( 78) + 0 on 47;
+  architecture my_arch of threebitcounter_alt at 14( 298) + 0 on 48;
+file . "3bit_tb.vhd" "3394d6f091fa1f6a73bdd292543809f69b52a74c" "20231113234057.366":
+  entity tb at 7( 152) + 0 on 131;
+  architecture tb_arch of tb at 13( 218) + 0 on 132;
+file . "debouncer.vhd" "91f9d9127f8a0fb6098a48e8a66ae6fb71b4ee36" "20231113232427.258":
+  entity debouncer at 3( 57) + 0 on 113;
+  architecture scheme1_arch of debouncer at 16( 434) + 0 on 114;
+file . "t_ff.vhd" "f6f2ffc6a340a3cf30592854b28f86341dbd22dd" "20231114194325.017":
+  entity t_ff at 5( 80) + 0 on 133;
+  architecture two_seg_arch of t_ff at 17( 335) + 0 on 134;
+file . "t_ff_tb.vhd" "0624383a40c4c6e2de892cf241ebefc7755f87c5" "20231112020121.572":
+  entity t_ff_tb at 5( 90) + 0 on 29;
+  architecture tb of t_ff_tb at 12( 192) + 0 on 30;
+file . "3bit.vhd" "9494cc64fe418877380b34ffee2d2e735f001e27" "20231113234045.014":
+  entity threebitcounter at 1( 0) + 0 on 128;
+  architecture my_arch of threebitcounter at 13( 266) + 0 on 129;
+  architecture two_seg of threebitcounter at 56( 1212) + 0 on 130;
+file . "alt_tb.vhd" "72718d29d2056ccbb9e588eb792339d1e93f3bb6" "20231112031212.564":
+  entity tb_alt at 5( 93) + 0 on 49;
+  architecture tb_arch of tb_alt at 11( 167) + 0 on 50;

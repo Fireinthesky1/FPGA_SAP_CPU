@@ -1,0 +1,12 @@
+-- VHDL 8 bit processor project
+-- 3 bit counter test bench
+-- James Hicks November 11 2023
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity tb is
+end tb;
+
+architecture tb_arch of tb is
+  signal
