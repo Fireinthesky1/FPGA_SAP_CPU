@@ -4,7 +4,7 @@
 
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.numeric_std.all
+use ieee.numeric_std.all;
 
 entity hex_to_sseg is
     Port ( hex  :  in STD_LOGIC_VECTOR (3 downto 0);
@@ -37,6 +37,3 @@ begin
             "0111000" when others; -- x"F"
     
 end Behavioral;
-entity hex_to_sseg is
-
-end hex_to_sseg;

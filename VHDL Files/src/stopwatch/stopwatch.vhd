@@ -24,7 +24,7 @@ architecture my_arch of stopwatch is
 begin
 
 --COUNTER STAGES
-
+--NOTE: 100ms tick generator
   ctrstg_0 : entity work.ctrstg(my_arch)
     port map ( clr  => clr,
                en   => en,
@@ -32,15 +32,17 @@ begin
                tick => tick_0,
                cnt  => open );
 
+--NOTE: .1 second counter
   ctrstg_1 : entity work.ctrstg(my_arch)
     port map ( clr  => clr,
                en   => tick_0,
                clk  => clk,
-               tick => tick_1
+               tick => tick_1,
                cnt  => cnt_1 );
 
   en_2 <= tick_0 and tick_1;
 
+--NOTE: 1 second counter
   ctrstg_2 : entity work.ctrstg(my_arch)
     port map ( clr  => clr,
                en   => en_2,
@@ -50,6 +52,7 @@ begin
 
   en_3 <= en_2 and tick_2;
 
+--NOTE: 10 second counter
   ctrstg_3 : entity work.ctrstg(my_arch)
     port map ( clr  => clr,
                en   => en_3,
@@ -59,11 +62,12 @@ begin
 
   en_4 <= en_3 and tick_3;
 
+--NOTE: Minute counter
   ctrstg_4 : entity work.ctrstg(my_arch)
     port map ( clr  => clr,
                en   => en_4,
                clk  => clk,
-               tick => open
+               tick => open,
                cnt  => cnt_4 );
 
 --HEX TO SSEGS
@@ -97,17 +101,17 @@ begin
 --DISPLAY MUX
 
   disp_mux : entity work.disp_mux(Behavioral)
-    port map ( in0   => "11111111";
-               in1   => "11111111";
-               in2   => "11111111";
-               in3   => "11111111";
-               in4   => blnk_4;
-               in5   => sseg_3;
-               in6   => sseg_2;
-               in7   => sseg_1;
-               rst   => '0';
-               clk   => clk;
-               sseg  => sseg
+    port map ( in0   => "11111111",
+               in1   => "11111111",
+               in2   => "11111111",
+               in3   => "11111111",
+               in4   => blnk_4,
+               in5   => sseg_3,
+               in6   => sseg_2,
+               in7   => sseg_1,
+               rst   => '0',
+               clk   => clk,
+               sseg  => sseg,
                anode => anode );
 
 end my_arch;
