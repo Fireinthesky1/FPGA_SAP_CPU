@@ -29,7 +29,7 @@ begin
   end process;
 
 --COMBINATIONAL PORTION
-  stg_next <=(others=>'0')when((stg_reg=max)and en='1') else
+  stg_next <=(others=>'0')when(((stg_reg=max) and (en='1')) or clr = '1')  else
              stg_reg + 1 when en = '1' else
              stg_reg;
 

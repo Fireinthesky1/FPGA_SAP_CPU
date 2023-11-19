@@ -2,8 +2,6 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
---TODO: TEST THIS
-
 entity stopwatch is
   port ( clk   : in  std_logic;
          en    : in  std_logic;
@@ -20,12 +18,24 @@ architecture my_arch of stopwatch is
   signal          cnt_1,  cnt_2,  cnt_3,  cnt_4 : std_logic_vector(3 downto 0);
   signal         sseg_1, sseg_2, sseg_3, sseg_4 : std_logic_vector(7 downto 0);
   signal                                 blnk_4 : std_logic_vector(7 downto 0);
+  signal  max_0                                 : integer;
 
 begin
 
+--FAST MUX
+--TODO: GET THIS WORKING
+--  with fast select max_0 <=
+--    2 when '1',
+--    16 when others;
+max_0 <= 9;
+
+
 --COUNTER STAGES
 --NOTE: 100ms tick generator
+--TODO: Update the max and width for 100 ms timer
   ctrstg_0 : entity work.ctrstg(my_arch)
+    generic map( max   => 9,
+                 width => 4 )
     port map ( clr  => clr,
                en   => en,
                clk  => clk,
@@ -34,6 +44,8 @@ begin
 
 --NOTE: .1 second counter
   ctrstg_1 : entity work.ctrstg(my_arch)
+    generic map ( max   => 9,
+                  width => 4 )
     port map ( clr  => clr,
                en   => tick_0,
                clk  => clk,
@@ -44,6 +56,8 @@ begin
 
 --NOTE: 1 second counter
   ctrstg_2 : entity work.ctrstg(my_arch)
+    generic map ( max   => 9,
+                  width => 4 )
     port map ( clr  => clr,
                en   => en_2,
                clk  => clk,
@@ -54,6 +68,8 @@ begin
 
 --NOTE: 10 second counter
   ctrstg_3 : entity work.ctrstg(my_arch)
+    generic map ( max   => 6,
+                  width => 4 )
     port map ( clr  => clr,
                en   => en_3,
                clk  => clk,
@@ -64,6 +80,8 @@ begin
 
 --NOTE: Minute counter
   ctrstg_4 : entity work.ctrstg(my_arch)
+    generic map ( max   => 4,
+                  width => 4 )
     port map ( clr  => clr,
                en   => en_4,
                clk  => clk,
@@ -85,12 +103,12 @@ begin
   hex_to_sseg_3 : entity work.hex_to_sseg(Behavioral)
     port map ( hex  => cnt_3,
                dp   => '1',                              --TODO: DON't LIGHT UP?
-               sseg => sseg_3);
+               sseg => sseg_3 );
 
   hex_to_sseg_4 : entity work.hex_to_sseg(Behavioral)
     port map ( hex  => cnt_4,
                dp   => '1',                              --TODO: DON'T LIGHT UP?
-               sseg => sseg_4);
+               sseg => sseg_4 );
 
 --ZERO BLANKER
 
