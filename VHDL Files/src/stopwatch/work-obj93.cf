@@ -11,9 +11,9 @@ file . "hex_to_sseg.vhdl" "d8d7b5b30d3f5ba5a5ff94e7d8e466a9701699df" "2023111804
 file . "disp_mux.vhd" "ac9a00ceac1dd355cb1031b9d9295d35e04e8b8d" "20231118042711.632":
   entity disp_mux at 1( 0) + 0 on 18;
   architecture behavioral of disp_mux at 21( 779) + 0 on 19;
-file . "stopwatch.vhd" "b037553ce3bc1beb4eb424eb9267f9bed8ea7646" "20231118203522.286":
-  entity stopwatch at 1( 0) + 0 on 98;
-  architecture my_arch of stopwatch at 16( 356) + 0 on 99;
-file . "stopwatch_tb.vhd" "19a195a4a47b26bee9a27b8dff40fef66591bd35" "20231118203524.856":
-  entity sw_tb at 1( 0) + 0 on 100;
-  architecture tb of sw_tb at 8( 98) + 0 on 101;
+file . "stopwatch.vhd" "9e1ea07687f72d46823b4de958f1e10b37c1c0ed" "20231120044315.704":
+  entity stopwatch at 1( 0) + 0 on 126;
+  architecture my_arch of stopwatch at 14( 337) + 0 on 127;
+file . "stopwatch_tb.vhd" "f49bdc114f412d740d7c62217f3c2934f1fd1c53" "20231120044318.370":
+  entity sw_tb at 1( 0) + 0 on 128;
+  architecture tb of sw_tb at 8( 98) + 0 on 129;

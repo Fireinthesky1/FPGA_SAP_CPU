@@ -41,14 +41,14 @@ begin
 
   fast_process : process
   begin
-    wait for clk_period * 5000;
+    wait for clk_period * 500000;
     fast <= '1';
     wait;
   end process;
 
   termination_process : process
   begin
-    wait for clk_period * 100000;
+    wait for clk_period * 10000000;
     assert false report "Test Complete" severity failure;
   end process;
 

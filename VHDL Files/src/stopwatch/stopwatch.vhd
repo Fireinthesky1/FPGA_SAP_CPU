@@ -18,29 +18,40 @@ architecture my_arch of stopwatch is
   signal          cnt_1,  cnt_2,  cnt_3,  cnt_4 : std_logic_vector(3 downto 0);
   signal         sseg_1, sseg_2, sseg_3, sseg_4 : std_logic_vector(7 downto 0);
   signal                                 blnk_4 : std_logic_vector(7 downto 0);
-  signal  max_0                                 : integer;
+  signal tick_slow, tick_fast                   : std_logic;
 
 begin
-
---FAST MUX
---TODO: GET THIS WORKING
---  with fast select max_0 <=
---    2 when '1',
---    16 when others;
-max_0 <= 9;
-
 
 --COUNTER STAGES
 --NOTE: 100ms tick generator
 --TODO: Update the max and width for 100 ms timer
   ctrstg_0 : entity work.ctrstg(my_arch)
-    generic map( max   => 9,
-                 width => 4 )
+    generic map( max   => 1250000, -- <- 1/8th of 10 million
+                 width => 15 )
     port map ( clr  => clr,
                en   => en,
                clk  => clk,
-               tick => tick_0,
+               tick => tick_fast,
                cnt  => open );
+
+--TEST CODE---------------------------------------------------------------------
+
+--NOTE: IF FAST = '0' THIS STAGE'S OUTPUT WILL BE USED
+--NOTE: THIS IS A CLOCK DIVIDER BY 8
+  ctrstd_slow : entity work.ctrstg(my_arch)
+    generic map ( max   => 7,
+                  width => 4 )
+    port map ( clr  => clr,
+               en   => tick_fast,
+               clk  => clk,
+               tick => tick_slow,
+               cnt  => open );
+
+tick_0 <= tick_fast when (fast = '1') else (tick_slow and tick_fast);
+
+--TEST CODE---------------------------------------------------------------------
+
+
 
 --NOTE: .1 second counter
   ctrstg_1 : entity work.ctrstg(my_arch)
