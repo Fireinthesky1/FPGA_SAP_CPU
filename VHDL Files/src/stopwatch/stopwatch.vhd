@@ -27,7 +27,7 @@ begin
 --TODO: Update the max and width for 100 ms timer
   ctrstg_0 : entity work.ctrstg(my_arch)
     generic map( max   => 1250000, -- <- 1/8th of 10 million
-                 width => 15 )
+                 width => 21 )
     port map ( clr  => clr,
                en   => en,
                clk  => clk,
@@ -79,7 +79,7 @@ tick_0 <= tick_fast when (fast = '1') else (tick_slow and tick_fast);
 
 --NOTE: 10 second counter
   ctrstg_3 : entity work.ctrstg(my_arch)
-    generic map ( max   => 6,
+    generic map ( max   => 5,
                   width => 4 )
     port map ( clr  => clr,
                en   => en_3,
@@ -130,14 +130,14 @@ tick_0 <= tick_fast when (fast = '1') else (tick_slow and tick_fast);
 --DISPLAY MUX
 
   disp_mux : entity work.disp_mux(Behavioral)
-    port map ( in0   => "11111111",
-               in1   => "11111111",
-               in2   => "11111111",
-               in3   => "11111111",
-               in4   => blnk_4,
-               in5   => sseg_3,
-               in6   => sseg_2,
-               in7   => sseg_1,
+    port map ( in0   => sseg_1,
+               in1   => sseg_2,
+               in2   => sseg_3,
+               in3   => blnk_4,
+               in4   => "11111111",
+               in5   => "11111111",
+               in6   => "11111111",
+               in7   => "11111111",
                rst   => '0',
                clk   => clk,
                sseg  => sseg,
