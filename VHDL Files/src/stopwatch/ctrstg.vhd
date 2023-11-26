@@ -1,12 +1,10 @@
---TODO::TEST THIS
-
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity ctrstg is
-  generic(max   : integer  := 9
-          width : integer  := 4);
+  generic(max   : integer  := 9;
+          width : integer  := 4 );
   port   (clr   : in  std_logic;
           en    : in  std_logic;
           clk   : in  std_logic;
@@ -31,8 +29,8 @@ begin
   end process;
 
 --COMBINATIONAL PORTION
-  stg_next <=(others=>'0')when((std_reg=max)and go='1') else
-             stg_reg + 1 when go = '1' else
+  stg_next <=(others=>'0')when(((stg_reg=max) and (en='1')) or clr = '1')  else
+             stg_reg + 1 when en = '1' else
              stg_reg;
 
   tick <= '1' when stg_reg = max else '0';

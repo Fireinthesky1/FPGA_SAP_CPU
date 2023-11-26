@@ -1,0 +1,12 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity tb is
+end tb;
+
+architecture my_arch of tb is
+  signal test_sw  : std_logic;
+  signal test_rst : std_logic;
+  signal test_clk : std_logic;
+  signal test_db  : std_logic;

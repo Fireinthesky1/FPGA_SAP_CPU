@@ -1,0 +1,19 @@
+v 4
+file . "zero_blanker.vhd" "3ed730a335fe8a3ae91df3736f7b66882e7cb876" "20231118042724.402":
+  entity zero_blanker at 5( 76) + 0 on 20;
+  architecture my_arch of zero_blanker at 14( 289) + 0 on 21;
+file . "ctrstg.vhd" "f5d98294dc7cda6ddc742d3a8664bc8365f8a0da" "20231118201601.768":
+  entity ctrstg at 1( 0) + 0 on 70;
+  architecture my_arch of ctrstg at 15( 359) + 0 on 71;
+file . "hex_to_sseg.vhdl" "d8d7b5b30d3f5ba5a5ff94e7d8e466a9701699df" "20231118042543.748":
+  entity hex_to_sseg at 5( 75) + 0 on 16;
+  architecture behavioral of hex_to_sseg at 15( 325) + 0 on 17;
+file . "disp_mux.vhd" "ac9a00ceac1dd355cb1031b9d9295d35e04e8b8d" "20231118042711.632":
+  entity disp_mux at 1( 0) + 0 on 18;
+  architecture behavioral of disp_mux at 21( 779) + 0 on 19;
+file . "stopwatch.vhd" "9e1ea07687f72d46823b4de958f1e10b37c1c0ed" "20231120044315.704":
+  entity stopwatch at 1( 0) + 0 on 126;
+  architecture my_arch of stopwatch at 14( 337) + 0 on 127;
+file . "stopwatch_tb.vhd" "f49bdc114f412d740d7c62217f3c2934f1fd1c53" "20231120044318.370":
+  entity sw_tb at 1( 0) + 0 on 128;
+  architecture tb of sw_tb at 8( 98) + 0 on 129;
