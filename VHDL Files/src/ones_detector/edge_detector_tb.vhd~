@@ -1,0 +1,36 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity ed_tb is
+end ed_tb;
+
+architecture tb of ed_tb is
+  signal test_sw      : std_logic := '0';
+  signal test_clk     : std_logic := '0';
+  signal test_en      : std_logic := '0';
+  signal test_tick    : std_logic := '0';
+  constant clk_period : time      := 10 ns;
+begin
+  clk_process : process
+  begin
+    wait for clk_period / 2;
+    test_clk <= not test_clk;
+  end process;
+
+  sw_process : process
+  begin
+    
+  end process;
+
+  en_process : process
+  begin
+  end process;
+
+  termination : process
+  begin
+  end process;
+
+
+end tb;
+

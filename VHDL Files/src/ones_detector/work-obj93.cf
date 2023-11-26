@@ -1,10 +1,19 @@
 v 4
-file . "debouncer.vhd" "27eafc3131dfe8352540c5d7e3d6fd32efd39304" "20231125192809.516":
-  entity debouncer at 1( 0) + 0 on 53;
-  architecture my_arch of debouncer at 12( 252) + 0 on 54;
+file . "ones_detector.vhd" "6f1763b868bce102a070e2b74074a2531e7a530c" "20231126013735.268":
+  entity three_ones at 1( 0) + 0 on 77;
+  architecture my_arch of three_ones at 12( 226) + 0 on 78;
+file . "edge_detector_tb.vhd" "34136f4dba1affa3f76c2e99aff13aed59786ae5" "20231126011632.198":
+  entity ed_tb at 1( 0) + 0 on 75;
+  architecture tb of ed_tb at 8( 98) + 0 on 76;
+file . "debouncer.vhd" "a57b86b1fd6e745ed1bb5608db08cbf3cbb14052" "20231125223616.932":
+  entity debouncer at 1( 0) + 0 on 63;
+  architecture my_arch of debouncer at 12( 252) + 0 on 64;
 file . "10_ms_timer.vhd" "508015c526975f29042a1236d5add51d9595d469" "20231125192805.233":
   entity ten_ms at 1( 0) + 0 on 51;
   architecture my_arch of ten_ms at 14( 351) + 0 on 52;
-file . "debouncer_tb.vhd" "33f598cabbb67928f450eaada30b061f2ff48f64" "20231125193418.099":
-  entity tb at 1( 0) + 0 on 61;
-  architecture my_arch of tb at 8( 92) + 0 on 62;
+file . "debouncer_tb.vhd" "84548d455978e193838e28bb763cbc9d51926664" "20231125230736.553":
+  entity tb at 1( 0) + 0 on 69;
+  architecture my_arch of tb at 8( 92) + 0 on 70;
+file . "edge_detector.vhd" "683083a719a60608fffb300a94099f8527f1f91d" "20231126011223.761":
+  entity ed at 1( 0) + 0 on 71;
+  architecture my_arch of ed at 12( 222) + 0 on 72;

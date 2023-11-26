@@ -47,36 +47,32 @@ begin
       when zero =>
         if(sw = '1') then
           r_next <= w1_0;
-        else
-          r_next <= zero;
         end if;
 
       when w1_0 =>
         if(sw = '1' and tick = '1') then
           r_next <= w1_1;
-        else
+        elsif(sw = '0') then
           r_next <= zero;
         end if;
 
       when w1_1 =>
         if(sw = '1' and tick = '1') then
           r_next <= one;
-        else
+        elsif(sw = '0') then
           r_next <= zero;
         end if;
 
       when one  =>
         if(sw = '0') then
           r_next <= w0_0;
-        else
-          r_next <= one;
         end if;
         db <= '1';
 
       when w0_0 =>
         if(sw = '0' and tick = '1') then
           r_next <= w0_1;
-        else
+        elsif(sw = '1') then
           r_next <= one;
         end if;
         db <= '1';
@@ -84,7 +80,7 @@ begin
       when w0_1 =>
         if(sw = '0' and tick = '1') then
           r_next <= zero;
-        else
+        elsif(sw = '1') then
           r_next <= one;
         end if;
         db <= '1';

@@ -21,11 +21,11 @@ begin
 
   sw_process : process
   begin
-    for i in 0 to 21 loop
+    for i in 0 to 20 loop
       wait for 1 ns;
       test_sw <= not test_sw;
     end loop;
-    wait for 20 ms;
+    wait for 100 ns;
   end process;
 
   rst_process : process
@@ -41,7 +41,7 @@ begin
 
   kill_process : process
   begin
-    wait for 100000 ns;
+    wait for 10000 ns;
     assert false report "end of test" severity failure;
   end process;
 
