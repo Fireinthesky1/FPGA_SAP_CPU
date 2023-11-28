@@ -1,0 +1,11 @@
+library ieee;
+use ieee.STD_LOGIC_1164.all;
+use ieee.numeric_std.all;
+
+entity counter is
+  port ();
+end counter;
+
+architecture my_arch of counter is
+
+begin

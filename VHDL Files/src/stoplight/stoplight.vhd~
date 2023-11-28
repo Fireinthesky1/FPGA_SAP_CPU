@@ -1,0 +1,10 @@
+library ieee;
+use ieee.STD_LOGIC_1164.all;
+use ieee.numeric_std.all;
+
+entity stoplight is
+  port (car  : in  std_logic;
+        rst  : in  std_logic;
+        clk  : in  std_logic;
+        main : out std_logic;
+        side : out std_logic);
