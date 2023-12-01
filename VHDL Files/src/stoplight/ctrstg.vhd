@@ -5,23 +5,23 @@ use ieee.numeric_std.all;
 entity ctrstg is
   generic(max   : integer  := 9;
           width : integer  := 4 );
-  port   (clr   : in  std_logic;
-          en    : in  std_logic;
-          clk   : in  std_logic;
-          tick  : out std_logic;
-          cnt   : out std_logic_vector(width-1 downto 0));
+  port   (clr   : in  std_logic := '0';
+          en    : in  std_logic := '0';
+          clk   : in  std_logic := '0';
+          tick  : out std_logic := '0';
+          cnt   : out std_logic_vector(width-1 downto 0) := (others => '0'));
 end ctrstg;
 
 architecture my_arch of ctrstg is
 
-  signal stg_reg, stg_next : unsigned(width-1 downto 0);
+  signal stg_reg, stg_next : unsigned(width-1 downto 0) := (others => '0');
 
 begin
 
 --SEQUENTIAL PORTION
   process(clr, clk)
   begin
-    if clr = '1' then
+    if clr = '1' and rising_edge(clk) then
       stg_reg <= (others => '0');
     elsif rising_edge(clk) then
       stg_reg <= stg_next;

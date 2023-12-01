@@ -1,13 +1,16 @@
 v 4
+file . "control.vhd" "4290f3bb327bf50bf8ba20e63885fc24822e2e3a" "20231130223209.948":
+  entity control at 1( 0) + 0 on 153;
+  architecture my_arch of control at 18( 578) + 0 on 154;
+file . "ctrstg.vhd" "3cadd3e23d0b4dc7335f301c2a92859509ff4f25" "20231130230727.157":
+  entity ctrstg at 1( 0) + 0 on 157;
+  architecture my_arch of ctrstg at 15( 406) + 0 on 158;
+file . "counter.vhd" "264b1fa4a8d0317ca82fdfe20fa66de14267bcb4" "20231130230732.746":
+  entity counter at 1( 0) + 0 on 159;
+  architecture my_arch of counter at 15( 446) + 0 on 160;
 file . "stoplight.vhd" "2029cac05b169e255b01f26b3f7032e036f72212" "20231128201822.266":
   entity stoplight at 1( 0) + 0 on 17;
   architecture my_arch of stoplight at 14( 357) + 0 on 18;
-file . "counter.vhd" "2ce02ce7bb87e5c43bf64eb3f5755b1871b6c174" "20231128201317.532":
-  entity counter at 1( 0) + 0 on 13;
-  architecture my_arch of counter at 15( 407) + 0 on 14;
-file . "ctrstg.vhd" "67703dcf26f252443179b58d5baf37349ac3e005" "20231128200916.909":
-  entity ctrstg at 1( 0) + 0 on 11;
-  architecture my_arch of ctrstg at 15( 373) + 0 on 12;
-file . "control.vhd" "643bd3538c0e12af83531633a511bf0817e565b8" "20231128201717.842":
-  entity control at 1( 0) + 0 on 15;
-  architecture my_arch of control at 18( 518) + 0 on 16;
+file . "counter_tb.vhd" "93e64e4b4a2b9d6535776eef1cd88147d299c494" "20231201000219.106":
+  entity stoplight_tb at 1( 0) + 0 on 167;
+  architecture tb of stoplight_tb at 8( 112) + 0 on 168;
